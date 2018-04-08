@@ -1,3 +1,4 @@
+<!-- This is agent dashboard -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -114,64 +115,20 @@
                   <h3 class="panel-title">Website Overview</h3>
                 </div>
                 <div class="panel-body">
-                  <div class="col-md-3">
-                    <div class="well dash-box">
-                      <h2> <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 203 </h2>
-                      <h4> Users </h4>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="well dash-box">
-                        <h2> <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 12 </h2>
-                        <h4> Pages </h4>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="well dash-box">
-                        <h2> <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 33 </h2>
-                        <h4> Posts </h4>
-
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="well dash-box">
-                        <h2><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> 12,334</h2>
-                        <h4> Visitors </h4>
-
-                      </div>
-                    </div>
-                </div>
+                  <div class="col-md-5">
+                             <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                            <div class="btn-group" role="group">
+                              <button type="button" class="btn btn-default main-color-bg" onclick="window.location.href='agent_upload.php'">Upload Lottery Image</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                              <button type="button" class="btn btn-default main-color-bg" onclick="window.location.href='agent_validate.php'">Validate</button>
+                               </div>
+                            
+                              </div>
+                
               </div>
               <!-- latest users -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Latest Users</h3>
-                </div>
-                <div class="panel-body">
-                  <table class="table table-striped table-hover">
-                    <tr>
-                      <th>Name</th>
-                      <th>Email</th>
-                      <th>Joined</th>
-                    </tr>
-                    <tr>
-                      <th>Jill Smith</th>
-                      <th>jillsmith@gmail.com</th>
-                      <th>Dec 12, 2016</th>
-                    </tr>
-                    <tr>
-                      <th>Eve Jackson</th>
-                      <th>ejackson@yahoo.com</th>
-                      <th>Dec 13, 2016</th>
-                    </tr>
-                    <tr>
-                      <th>John Doe</th>
-                      <th>jdoe@gmail.com</th>
-                      <th>Dec 13,2016</th>
-                    </tr>
-                  </table>
-                </div>
-              </div>
+              
 
           </div>
         </div>

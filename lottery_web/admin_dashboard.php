@@ -1,3 +1,4 @@
+<!-- This is admin dashboard -->
 <!DOCTYPE html>
 <html lang="en">
   <head>

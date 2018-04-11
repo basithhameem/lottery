@@ -34,7 +34,7 @@
                   <button type="button" class="btn btn-default main-color-bg" onclick="window.location.href='home.html'">Lift me to Home page</button>
                 </div>
               </div>
-              <h2 style="margin-bottom: 30px;"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>    Staff |  Login</h2>
+              <h2 style="margin-bottom: 30px;"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>    Admin |  Login</h2>
               <form method="post" action="login_admin_action.php">
                 <div class="form-group">
                   <label for="">Username</label>

@@ -110,6 +110,16 @@ body{
   text-align:center;
 }
 
+/*file upload*/
+
+input[type="file"] {
+
+    
+}
+.ec{
+  font-size: 16px;
+}
+
 /* footer */
 
 #footer{

@@ -82,7 +82,7 @@
                   <h3 class="panel-title">Upload lottery to validate</h3>
                 </div>
                 <div class="panel-body" style="width:800px; margin:0 auto;">
-                  <div class="col-md-5 ec">
+                  <div class="col-md-12">
                
 <?php             
               require_once("dbConnect.php");
@@ -101,30 +101,78 @@
                     $xval=$row['x'];
                     $yval=$row['y'];
                     }
-                  $query="SELECT id from ticket_info where secret_code='$xval' AND code='$yval' AND mobile_number='';";
-                  $result=mysqli_query($con,$query);
-                  if (mysqli_num_rows($result)>0)
-                      {
-                      while($row = mysqli_fetch_array($result))
-                        {
-                        $wid=$row['id'];
-                        }
-                      session_start();
-                      $_SESSION["wonid"] = $wid;
-                      echo "Congratulations You won the prize";
-                      header( "refresh:3;url=agent_mobile_entry.php" );
-                      }
-                  else
+              $query="SELECT id FROM ticket_info WHERE secret_code='$xval';";
+              $result=mysqli_query($con,$query);   
+                    if (mysqli_num_rows($result)>0)
+                      { 
+                        while($row = mysqli_fetch_array($result))
+                          {
+                          $chk_id=$row['id'];
+                          }
+                      $query="SELECT id FROM ticket_info WHERE id=$chk_id AND code='$yval';";
+                      $result=mysqli_query($con,$query);
+                          if (mysqli_num_rows($result)>0)
+                          {
+                                
+                          }
+                          else
+                          {
+                            echo "\nSorry You dont win the lottery";
+                            header( "refresh:5;url=agent_dashboard.php" );
+                          } 
+                          $query="SELECT id FROM ticket_info WHERE id!=$chk_id AND code='$yval';";
+                          $result=mysqli_query($con,$query);
+                                    if (mysqli_num_rows($result)>0)
+                                    {
+                                      echo "\nYou are busted. Sorry your ticket is forged";
+                                      header( "refresh:5;url=agent_dashboard.php" );
+                                    }  
+                    }
+                    else
                     {
-                     echo "You dont have any prize or some one grabbed your prize or some discrepency found on ticket..Try Again..";
-                      header( "refresh:3;url=agent_dashboard.php" ); 
+                      echo "\nSorry You dont win the lottery";
+                      header( "refresh:5;url=agent_dashboard.php" );
+                    }
+
+                  $query="SELECT id from ticket_info where secret_code='$xval' AND code='$yval' AND mobile_number!='0';";
+                    $result=mysqli_query($con,$query);
+                    if (mysqli_num_rows($result)>0)
+                      {
+                        echo "\nSome one grabbed your prize!!!";
+                        $query="SELECT mobile_number from ticket_info where secret_code='$xval' AND code='$yval';";
+                        $result=mysqli_query($con,$query);
+                        while($row = mysqli_fetch_array($result))
+                          {
+                          $hisnumber=$row['mobile_number'];
+                          }
+                        echo "\nHe/She entered the mobile number as ".$hisnumber; 
+                        header( "refresh:12;url=agent_dashboard.php" );
+                      }
+
+                    else
+                    {
+                      $query="SELECT id from ticket_info where secret_code='$xval' AND code='$yval' AND mobile_number='0';";
+                      $result=mysqli_query($con,$query);
+                      if (mysqli_num_rows($result)>0)
+                          {
+                          while($row = mysqli_fetch_array($result))
+                            {
+                            $wid=$row['id'];
+                            }
+                          session_start();
+                          $_SESSION["wonid"] = $wid;
+                          echo "\nCongratulations You won the prize";
+                          header( "refresh:5;url=agent_mobile_entry.php" );
+                          }
                     }
               }
               else 
               {
-                echo "Upload an image of lottery and try again!!!";
-                header( "refresh:3;url=agent_dashboard.php" );
+                echo "\nUpload an image of lottery and try again!!!";
+                header( "refresh:5;url=agent_dashboard.php" );
               }
+              
+
               mysqli_close($con);
 ?>
               

@@ -5,8 +5,8 @@
               $wid=$_SESSION["wonid"];
               $query="UPDATE ticket_info SET mobile_number='$mobnum' WHERE id=$wid;";
               $result=mysqli_query($con,$query);
-              $query="DELETE FROM temp_ticket_info;";
-              $result=mysqli_query($con,$query);
+              //$query="DELETE FROM temp_ticket_info;";
+              //$result=mysqli_query($con,$query);
               if ($result)
               {
               session_destroy();

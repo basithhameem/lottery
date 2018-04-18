@@ -179,8 +179,8 @@
       </div>
     </section>
 
-    <footer id="footer">
-      <p>Copyright AdminStrap, &copy; 2018</p>
+   <footer id="footer">
+      <p> &nbsp &nbsp &nbsp &copy; 2018  All Rights Reserved |Team4 Department of ECE | CET </p>
     </footer>
 
 

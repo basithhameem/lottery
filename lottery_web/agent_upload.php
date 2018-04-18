@@ -41,7 +41,7 @@
             <li><a href="posts.html">Winners</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="pages.html">Welcome, Ragu</a></li>
+            <li><a href="pages.html">Welcome, Agent</a></li>
             <li><a href="login.html.html">Logout</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -101,7 +101,7 @@
     </section>
 
     <footer id="footer">
-      <p>&nbsp &nbsp &nbsp &copy; 2018  All Rights Reserved |Hisham Department of ECE | CET </p>
+      <p>&nbsp &nbsp &nbsp &copy; 2018  All Rights Reserved |Team4 Department of ECE | CET </p>
     </footer>
 
 

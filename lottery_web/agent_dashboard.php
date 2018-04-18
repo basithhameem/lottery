@@ -36,7 +36,7 @@
             <li><a href="posts.html">Winners</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="pages.html">Welcome, Ragu</a></li>
+            <li><a href="pages.html">Welcome, Agent</a></li>
             <li><a href="login.html.html">Logout</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -77,14 +77,12 @@
                   <h3 class="panel-title">Upload lottery to validate</h3>
                 </div>
                 <div class="panel-body" style="width:800px; margin:0 auto;">
-                  <div class="col-md-5">
+                  <div class="col-md-8">
                              <div class="btn-group btn-group-justified" role="group" aria-label="...">
                             <div class="btn-group" role="group">
                               <button type="button" class="btn btn-default main-color-bg" onclick="window.location.href='agent_upload.php'">Upload Lottery Image</button>
                             </div>
-                            <div class="btn-group" role="group">
-                              <button type="button" class="btn btn-default main-color-bg" onclick="window.location.href='agent_process.php'">Process</button>
-                               </div>
+                        
                             <div class="btn-group" role="group">
                               <button type="button" class="btn btn-default main-color-bg" onclick="window.location.href='agent_validate.php'">Validate</button>
                                </div>
@@ -101,7 +99,7 @@
     </section>
 
     <footer id="footer">
-      <p>&nbsp &nbsp &nbsp &copy; 2018  All Rights Reserved |Hisham Department of ECE | CET </p>
+      <p>&nbsp &nbsp &nbsp &copy; 2018  All Rights Reserved |Team4 Department of ECE | CET </p>
     </footer>
 
 

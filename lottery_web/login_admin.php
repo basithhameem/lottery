@@ -52,7 +52,7 @@
         </div>
         <br><br><br>
         <div class="col-md-4 col-md-offset-4">
-            <p>&nbsp &nbsp &nbsp &copy; 2018  All Rights Reserved |Hisham Department of ECE | CET </p>
+            <p>&nbsp &nbsp &nbsp &copy; 2018  All Rights Reserved |Team4 Department of ECE | CET </p>
           </div>
   </body>
 </html>

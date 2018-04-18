@@ -96,9 +96,9 @@
                 }
               $last_tid=$last_tid+1;
               //renaming
-              $filename="ticket".$last_tid;
+              $filename="ticket";
 
-              $filepath = "photo/".$filename;
+              $filepath = "photo/".$filename.".jpg";
               move_uploaded_file($filetmp,$filepath);
               $query="INSERT INTO image_info VALUES (DEFAULT,'$filename','$filepath');";
               $result=mysqli_query($con,$query);

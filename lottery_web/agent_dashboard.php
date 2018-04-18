@@ -83,6 +83,9 @@
                               <button type="button" class="btn btn-default main-color-bg" onclick="window.location.href='agent_upload.php'">Upload Lottery Image</button>
                             </div>
                             <div class="btn-group" role="group">
+                              <button type="button" class="btn btn-default main-color-bg" onclick="window.location.href='agent_process.php'">Process</button>
+                               </div>
+                            <div class="btn-group" role="group">
                               <button type="button" class="btn btn-default main-color-bg" onclick="window.location.href='agent_validate.php'">Validate</button>
                                </div>
                             

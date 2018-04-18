@@ -1,0 +1,7 @@
+require_once("dbConnect.php");
+              //session_start();
+              $myusername=$_SESSION['login_user'];
+              $result = mysqli_query($con,"SELECT stu_name FROM login_student where stud_user='$myusername'");
+              $row = mysqli_fetch_array($result);
+              $sname=$row['stu_name'];   
+              echo $sname;

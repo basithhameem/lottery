@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # USAGE
 # python detect_mrz.py --images examples
-
 # import the necessary packages
 from __future__ import print_function
 import pyzbar.pyzbar as pyzbar
@@ -11,6 +10,7 @@ import argparse
 import imutils
 import cv2
 import pymysql
+print ("Hello fucker")
 
 # construct the argument parse and parse the arguments
 #ap = argparse.ArgumentParser()

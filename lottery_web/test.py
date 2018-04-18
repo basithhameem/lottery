@@ -1,10 +1,9 @@
-from os import listdir
-from os.path import isfile, join
+import sys
 
-def do_exist(path):
-    return any(isfile(join(path, i)) for i in listdir(path))
-    print("it esxist")
+user = sys.argv[1]
+password = sys.argv[2]
 
-
-pa = '/opt/lampp/htdocs/lottery/lottery_web/photo/'
-do_exist(pa)
+if user == "user@domain.tld" and password == "123456":
+    print  "ok, registered"
+else: 
+    print  "NOT registered"

@@ -139,7 +139,7 @@
     </section>
 
     <footer id="footer">
-      <p>&nbsp &nbsp &nbsp &copy; 2018  All Rights Reserved |Hisham Department of ECE | CET </p>
+      <p>&nbsp &nbsp &nbsp &copy; 2018  All Rights Reserved |Team4 Department of ECE | CET </p>
     </footer>
 
 
